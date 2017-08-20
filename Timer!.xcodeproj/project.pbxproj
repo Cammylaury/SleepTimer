@@ -12,6 +12,8 @@
 		26D51EF31F48A39F004D6340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D51EF11F48A39F004D6340 /* Main.storyboard */; };
 		26D51EF51F48A39F004D6340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26D51EF41F48A39F004D6340 /* Assets.xcassets */; };
 		26D51EF81F48A39F004D6340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D51EF61F48A39F004D6340 /* LaunchScreen.storyboard */; };
+		26D51F091F48C935004D6340 /* RoundBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F081F48C935004D6340 /* RoundBtnView.swift */; };
+		26D51F0B1F48CEBE004D6340 /* RoundBtnTimerBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F0A1F48CEBE004D6340 /* RoundBtnTimerBtn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		26D51EF41F48A39F004D6340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26D51EF71F48A39F004D6340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26D51EF91F48A39F004D6340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26D51F081F48C935004D6340 /* RoundBtnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtnView.swift; sourceTree = "<group>"; };
+		26D51F0A1F48CEBE004D6340 /* RoundBtnTimerBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundBtnTimerBtn.swift; path = ../RoundBtnTimerBtn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,9 @@
 		26D51EEC1F48A39F004D6340 /* Timer! */ = {
 			isa = PBXGroup;
 			children = (
+				26D51F071F48C8D4004D6340 /* Model */,
+				26D51F061F48C8CE004D6340 /* View */,
+				26D51F051F48C8C7004D6340 /* Controller */,
 				26D51EED1F48A39F004D6340 /* AppDelegate.swift */,
 				26D51EEF1F48A39F004D6340 /* ViewController.swift */,
 				26D51EF11F48A39F004D6340 /* Main.storyboard */,
@@ -62,6 +69,29 @@
 				26D51EF91F48A39F004D6340 /* Info.plist */,
 			);
 			path = "Timer!";
+			sourceTree = "<group>";
+		};
+		26D51F051F48C8C7004D6340 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		26D51F061F48C8CE004D6340 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26D51F081F48C935004D6340 /* RoundBtnView.swift */,
+				26D51F0A1F48CEBE004D6340 /* RoundBtnTimerBtn.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		26D51F071F48C8D4004D6340 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D51F091F48C935004D6340 /* RoundBtnView.swift in Sources */,
 				26D51EF01F48A39F004D6340 /* ViewController.swift in Sources */,
+				26D51F0B1F48CEBE004D6340 /* RoundBtnTimerBtn.swift in Sources */,
 				26D51EEE1F48A39F004D6340 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

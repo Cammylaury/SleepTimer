@@ -9,9 +9,9 @@
 import UIKit
 
 @IBDesignable
-class RoundBtnView: UIButton {
+class RoundBtnView: BounceButton {
 
     override func draw(_ rect: CGRect) {
-        RoundBtnTimerBtn.drawCanvas1(frame: self.bounds, resizing: .aspectFit)
+        RoundBtnTimerBtn.drawCanvas2(frame: self.bounds, resizing: .aspectFit)
     }
 }

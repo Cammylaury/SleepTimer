@@ -14,6 +14,8 @@
 		26D51EF81F48A39F004D6340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D51EF61F48A39F004D6340 /* LaunchScreen.storyboard */; };
 		26D51F091F48C935004D6340 /* RoundBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F081F48C935004D6340 /* RoundBtnView.swift */; };
 		26D51F0B1F48CEBE004D6340 /* RoundBtnTimerBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F0A1F48CEBE004D6340 /* RoundBtnTimerBtn.swift */; };
+		26D51F0D1F49DF73004D6340 /* WakeUpBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F0C1F49DF73004D6340 /* WakeUpBtnView.swift */; };
+		26D51F121F49E6B3004D6340 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F111F49E6B3004D6340 /* BounceButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		26D51EF91F48A39F004D6340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26D51F081F48C935004D6340 /* RoundBtnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtnView.swift; sourceTree = "<group>"; };
 		26D51F0A1F48CEBE004D6340 /* RoundBtnTimerBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundBtnTimerBtn.swift; path = ../RoundBtnTimerBtn.swift; sourceTree = "<group>"; };
+		26D51F0C1F49DF73004D6340 /* WakeUpBtnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WakeUpBtnView.swift; path = ../WakeUpBtnView.swift; sourceTree = "<group>"; };
+		26D51F111F49E6B3004D6340 /* BounceButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		26D51EEC1F48A39F004D6340 /* Timer! */ = {
 			isa = PBXGroup;
 			children = (
+				26D51F101F49E69B004D6340 /* CustomControls */,
 				26D51F071F48C8D4004D6340 /* Model */,
 				26D51F061F48C8CE004D6340 /* View */,
 				26D51F051F48C8C7004D6340 /* Controller */,
@@ -82,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				26D51F081F48C935004D6340 /* RoundBtnView.swift */,
+				26D51F0C1F49DF73004D6340 /* WakeUpBtnView.swift */,
 				26D51F0A1F48CEBE004D6340 /* RoundBtnTimerBtn.swift */,
 			);
 			name = View;
@@ -92,6 +98,14 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		26D51F101F49E69B004D6340 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				26D51F111F49E6B3004D6340 /* BounceButton.swift */,
+			);
+			name = CustomControls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,9 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				26D51F091F48C935004D6340 /* RoundBtnView.swift in Sources */,
+				26D51F0D1F49DF73004D6340 /* WakeUpBtnView.swift in Sources */,
 				26D51EF01F48A39F004D6340 /* ViewController.swift in Sources */,
 				26D51F0B1F48CEBE004D6340 /* RoundBtnTimerBtn.swift in Sources */,
 				26D51EEE1F48A39F004D6340 /* AppDelegate.swift in Sources */,
+				26D51F121F49E6B3004D6340 /* BounceButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +350,7 @@
 				26D51EFE1F48A39F004D6340 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

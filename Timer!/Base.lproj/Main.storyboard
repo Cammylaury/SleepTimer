@@ -43,24 +43,38 @@
                                     <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mAn-bP-mGf"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="np_sleep_645789_F2FEFF" translatesAutoresizingMaskIntoConstraints="NO" id="aIA-5R-fbI">
-                                <rect key="frame" x="162.5" y="150" width="50" height="51"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAN-sU-TfU" userLabel="BlueBtn" customClass="WakeUpBtnView" customModule="Timer_" customModuleProvider="target">
+                                <rect key="frame" x="140" y="552" width="95" height="95"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="WLm-HX-bQ7"/>
+                                    <constraint firstAttribute="height" constant="95" id="CWb-VL-zR8"/>
+                                    <constraint firstAttribute="width" constant="95" id="d2U-iu-uFo"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QYX-zi-kZe"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="np_sleep-mode_753977_F2FEFF" translatesAutoresizingMaskIntoConstraints="NO" id="hKh-OC-ihc">
+                                <rect key="frame" x="157" y="145" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="SJZ-l5-Qio"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="aIA-5R-fbI" firstAttribute="top" secondItem="qDg-8D-nuO" secondAttribute="bottom" constant="30" id="7Gl-eh-zww"/>
                             <constraint firstItem="Sxj-vS-W32" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="140" id="KpW-2S-ETc"/>
-                            <constraint firstItem="aIA-5R-fbI" firstAttribute="centerY" secondItem="Sxj-vS-W32" secondAttribute="centerY" id="NeP-PV-t0J"/>
                             <constraint firstAttribute="trailing" secondItem="Sxj-vS-W32" secondAttribute="trailing" constant="140" id="Ylt-SW-C6j"/>
+                            <constraint firstItem="hKh-OC-ihc" firstAttribute="centerY" secondItem="Sxj-vS-W32" secondAttribute="centerY" id="aIA-WS-gJc"/>
+                            <constraint firstItem="hKh-OC-ihc" firstAttribute="top" secondItem="Sxj-vS-W32" secondAttribute="top" constant="17" id="bdJ-hD-yOV"/>
                             <constraint firstItem="qDg-8D-nuO" firstAttribute="centerX" secondItem="2bo-i8-sZz" secondAttribute="centerX" id="gEg-qm-xfP"/>
-                            <constraint firstItem="aIA-5R-fbI" firstAttribute="centerX" secondItem="Sxj-vS-W32" secondAttribute="centerX" id="imv-L9-EA9"/>
+                            <constraint firstAttribute="bottom" secondItem="fAN-sU-TfU" secondAttribute="bottom" constant="20" symbolic="YES" id="kxr-ia-fIn"/>
                             <constraint firstItem="Sxj-vS-W32" firstAttribute="top" secondItem="qDg-8D-nuO" secondAttribute="bottom" constant="8" id="lIl-wU-4d1"/>
                             <constraint firstItem="qDg-8D-nuO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pA4-SI-0jf"/>
+                            <constraint firstItem="fAN-sU-TfU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qcV-NJ-0XJ"/>
+                            <constraint firstItem="hKh-OC-ihc" firstAttribute="bottom" secondItem="Sxj-vS-W32" secondAttribute="bottom" constant="-18" id="vRi-iX-t4L"/>
+                            <constraint firstItem="hKh-OC-ihc" firstAttribute="centerX" secondItem="Sxj-vS-W32" secondAttribute="centerX" id="vrU-Lj-Fc2"/>
                             <constraint firstItem="qDg-8D-nuO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wb8-T9-YGA"/>
+                            <constraint firstItem="fAN-sU-TfU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ycs-bN-bz8"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -71,6 +85,6 @@
     </scenes>
     <resources>
         <image name="RainBG1" width="1920" height="1080"/>
-        <image name="np_sleep_645789_F2FEFF" width="300" height="300"/>
+        <image name="np_sleep-mode_753977_F2FEFF" width="1200" height="1200"/>
     </resources>
 </document>

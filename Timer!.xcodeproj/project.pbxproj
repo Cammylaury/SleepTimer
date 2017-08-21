@@ -16,6 +16,8 @@
 		26D51F0B1F48CEBE004D6340 /* RoundBtnTimerBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F0A1F48CEBE004D6340 /* RoundBtnTimerBtn.swift */; };
 		26D51F0D1F49DF73004D6340 /* WakeUpBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F0C1F49DF73004D6340 /* WakeUpBtnView.swift */; };
 		26D51F121F49E6B3004D6340 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F111F49E6B3004D6340 /* BounceButton.swift */; };
+		26D51F141F4A7F08004D6340 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F131F4A7F08004D6340 /* TimerViewController.swift */; };
+		26D51F161F4A800E004D6340 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F151F4A800E004D6340 /* CircularTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		26D51F0A1F48CEBE004D6340 /* RoundBtnTimerBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundBtnTimerBtn.swift; path = ../RoundBtnTimerBtn.swift; sourceTree = "<group>"; };
 		26D51F0C1F49DF73004D6340 /* WakeUpBtnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WakeUpBtnView.swift; path = ../WakeUpBtnView.swift; sourceTree = "<group>"; };
 		26D51F111F49E6B3004D6340 /* BounceButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
+		26D51F131F4A7F08004D6340 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		26D51F151F4A800E004D6340 /* CircularTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		26D51F051F48C8C7004D6340 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				26D51F131F4A7F08004D6340 /* TimerViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				26D51F111F49E6B3004D6340 /* BounceButton.swift */,
+				26D51F151F4A800E004D6340 /* CircularTransition.swift */,
 			);
 			name = CustomControls;
 			sourceTree = "<group>";
@@ -184,6 +190,8 @@
 				26D51F091F48C935004D6340 /* RoundBtnView.swift in Sources */,
 				26D51F0D1F49DF73004D6340 /* WakeUpBtnView.swift in Sources */,
 				26D51EF01F48A39F004D6340 /* ViewController.swift in Sources */,
+				26D51F161F4A800E004D6340 /* CircularTransition.swift in Sources */,
+				26D51F141F4A7F08004D6340 /* TimerViewController.swift in Sources */,
 				26D51F0B1F48CEBE004D6340 /* RoundBtnTimerBtn.swift in Sources */,
 				26D51EEE1F48A39F004D6340 /* AppDelegate.swift in Sources */,
 				26D51F121F49E6B3004D6340 /* BounceButton.swift in Sources */,

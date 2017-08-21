@@ -14,7 +14,7 @@
         <!--timerViewController-->
         <scene sceneID="zpa-Jh-7ba">
             <objects>
-                <viewController title="timerViewController" id="dcl-BY-cas" sceneMemberID="viewController">
+                <viewController title="timerViewController" id="dcl-BY-cas" customClass="TimerViewController" customModule="Timer_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g9A-A7-Nwt"/>
                         <viewControllerLayoutGuide type="bottom" id="zha-KC-VoQ"/>
@@ -32,17 +32,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMQ-7S-Ojx" userLabel="BlueBtn" customClass="RoundBtnView" customModule="Timer_" customModuleProvider="target">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMQ-7S-Ojx" userLabel="dismissBtn" customClass="RoundBtnView" customModule="Timer_" customModuleProvider="target">
                                             <rect key="frame" x="140" y="128" width="95" height="95"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="95" id="Rrz-4O-tew"/>
                                                 <constraint firstAttribute="width" constant="95" id="SY5-kq-wew"/>
                                             </constraints>
                                             <connections>
-                                                <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hTz-wA-foh"/>
+                                                <action selector="dismissTimerViewController:" destination="dcl-BY-cas" eventType="touchUpInside" id="eEv-Qi-fwm"/>
                                             </connections>
                                         </button>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timerClock" translatesAutoresizingMaskIntoConstraints="NO" id="18Y-tj-EDH">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="np_delete_926237_F2FEFF" translatesAutoresizingMaskIntoConstraints="NO" id="18Y-tj-EDH">
                                             <rect key="frame" x="157" y="145" width="60" height="60"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="Igf-99-N31"/>
@@ -98,8 +98,11 @@
                                     <constraint firstAttribute="width" constant="95" id="VGV-ug-2UZ"/>
                                     <constraint firstAttribute="height" constant="95" id="dS5-cw-TJC"/>
                                 </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.11372549019607843" green="0.28627450980392155" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mAn-bP-mGf"/>
+                                    <segue destination="dcl-BY-cas" kind="presentation" id="wew-0W-qzd"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timerClock" translatesAutoresizingMaskIntoConstraints="NO" id="hKh-OC-ihc">
@@ -193,10 +196,13 @@
                             <constraint firstItem="Sxj-vS-W32" firstAttribute="centerX" secondItem="2bo-i8-sZz" secondAttribute="centerX" id="zzt-oz-6we"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alarmButton" destination="Sxj-vS-W32" id="FKB-x8-H7W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="137" y="188"/>
         </scene>
         <!--vaporwaveOptions-->
         <scene sceneID="3p0-6G-qIb">
@@ -358,6 +364,7 @@
         <image name="fans unselected" width="141" height="141"/>
         <image name="fire unselected" width="141" height="141"/>
         <image name="light rain unselected" width="141" height="141"/>
+        <image name="np_delete_926237_F2FEFF" width="300" height="300"/>
         <image name="on roof unselected" width="141" height="141"/>
         <image name="plantwave unselected" width="141" height="141"/>
         <image name="play" width="300" height="300"/>

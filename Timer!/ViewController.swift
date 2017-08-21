@@ -38,6 +38,22 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//setting different points for the different buttons
+//configuring rain buttons center points
+        heavyThunderBtn.center = rainBtn.center
+        lightRainBtn.center = rainBtn.center
+        rainOnRoofBtn.center = rainBtn.center
+        
+//ambient center points
+        wavesBtn.center = ambienceBtn.center
+        fanBtn.center = ambienceBtn.center
+        campfireBtn.center = ambienceBtn.center
+        
+//vaporwave center points
+        ecoVirtualBtn.center = vaporwaveBtn.center
+        plantwaveBtn.center = vaporwaveBtn.center
+        vanityBtn.center = vaporwaveBtn.center
+        
     }
     
     

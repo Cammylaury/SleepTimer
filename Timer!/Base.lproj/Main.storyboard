@@ -207,7 +207,7 @@
         <!--vaporwaveOptions-->
         <scene sceneID="3p0-6G-qIb">
             <objects>
-                <viewController title="vaporwaveOptions" id="Lky-9X-xpE" sceneMemberID="viewController">
+                <viewController title="vaporwaveOptions" id="Lky-9X-xpE" customClass="VaporwaveSoundsViewController" customModule="Timer_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="A0O-Hl-QXn"/>
                         <viewControllerLayoutGuide type="bottom" id="MbX-cK-E0b"/>
@@ -221,15 +221,24 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kf1-cb-Qfk">
                                 <rect key="frame" x="117" y="28" width="141" height="141"/>
-                                <state key="normal" image="ecovirtual unselected"/>
+                                <state key="normal" image="ecovirtual_unselected"/>
+                                <connections>
+                                    <action selector="ecoVirtualBtnPressed:" destination="Lky-9X-xpE" eventType="touchUpInside" id="Anz-El-8zp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5L-wJ-Cbi">
                                 <rect key="frame" x="117" y="506" width="141" height="141"/>
-                                <state key="normal" image="死夢 unselected"/>
+                                <state key="normal" image="死夢_unselected"/>
+                                <connections>
+                                    <action selector="vanityBtnPressed:" destination="Lky-9X-xpE" eventType="touchUpInside" id="TM2-Pp-kbr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVm-Vb-V6Y">
                                 <rect key="frame" x="117" y="263" width="141" height="141"/>
-                                <state key="normal" image="plantwave unselected"/>
+                                <state key="normal" image="plantwave_unselected"/>
+                                <connections>
+                                    <action selector="plantWaveBtnPressed:" destination="Lky-9X-xpE" eventType="touchUpInside" id="Sin-bO-pzH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -246,6 +255,11 @@
                             <constraint firstItem="Kf1-cb-Qfk" firstAttribute="centerX" secondItem="Pf5-xv-Bbi" secondAttribute="centerX" id="tUL-S3-71X"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ecoVirtualBtn" destination="Kf1-cb-Qfk" id="YCI-J1-YLH"/>
+                        <outlet property="plantWaveBtn" destination="gVm-Vb-V6Y" id="Ddh-DA-BkA"/>
+                        <outlet property="vanityBtn" destination="y5L-wJ-Cbi" id="3xF-kP-PDr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3NH-vV-auW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -254,7 +268,7 @@
         <!--rainOptions-->
         <scene sceneID="Ryq-1d-XJa">
             <objects>
-                <viewController title="rainOptions" id="pQE-Pi-JvS" sceneMemberID="viewController">
+                <viewController title="rainOptions" id="pQE-Pi-JvS" customClass="RainSoundsViewController" customModule="Timer_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2ez-m1-Efa"/>
                         <viewControllerLayoutGuide type="bottom" id="3Ly-O6-VMw"/>
@@ -272,7 +286,10 @@
                                     <constraint firstAttribute="width" constant="141" id="VBx-Yj-mzh"/>
                                     <constraint firstAttribute="height" constant="141" id="ixW-kw-eqt"/>
                                 </constraints>
-                                <state key="normal" image="thunderstorm unselected"/>
+                                <state key="normal" image="thunderstorm_unselected"/>
+                                <connections>
+                                    <action selector="heavyThunderBtnPressed:" destination="pQE-Pi-JvS" eventType="touchUpInside" id="Z5l-dL-avo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttC-Jf-ccx">
                                 <rect key="frame" x="117" y="263" width="141" height="141"/>
@@ -280,7 +297,10 @@
                                     <constraint firstAttribute="width" constant="141" id="5u1-hE-xtv"/>
                                     <constraint firstAttribute="height" constant="141" id="abu-F4-nZD"/>
                                 </constraints>
-                                <state key="normal" image="light rain unselected"/>
+                                <state key="normal" image="light_rain_unselected"/>
+                                <connections>
+                                    <action selector="lightRainBtnPressed:" destination="pQE-Pi-JvS" eventType="touchUpInside" id="U46-3U-2sG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgk-Lx-QgG">
                                 <rect key="frame" x="117" y="506" width="141" height="141"/>
@@ -288,7 +308,10 @@
                                     <constraint firstAttribute="width" constant="141" id="M4c-YZ-jqM"/>
                                     <constraint firstAttribute="height" constant="141" id="w2H-hj-MtY"/>
                                 </constraints>
-                                <state key="normal" image="on roof unselected"/>
+                                <state key="normal" image="on_roof_unselected"/>
+                                <connections>
+                                    <action selector="rainOnRoofBtnPressed:" destination="pQE-Pi-JvS" eventType="touchUpInside" id="3Qx-Ag-CKC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -305,6 +328,11 @@
                             <constraint firstAttribute="bottom" secondItem="fgk-Lx-QgG" secondAttribute="bottom" constant="20" symbolic="YES" id="yUz-OW-6B7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heavyThunderBtn" destination="11h-qx-bIH" id="dCE-kk-Z6k"/>
+                        <outlet property="lightRainBtn" destination="ttC-Jf-ccx" id="G8I-rH-2el"/>
+                        <outlet property="rainOnRoofBtn" destination="fgk-Lx-QgG" id="H1y-Ph-YRA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sLY-oE-wYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -313,7 +341,7 @@
         <!--ambienceOptions-->
         <scene sceneID="9Z6-XG-BOQ">
             <objects>
-                <viewController title="ambienceOptions" id="Rbh-vh-9zl" sceneMemberID="viewController">
+                <viewController title="ambienceOptions" id="Rbh-vh-9zl" customClass="AmbientSoundsViewController" customModule="Timer_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bsg-eJ-Drm"/>
                         <viewControllerLayoutGuide type="bottom" id="WAK-hc-Knd"/>
@@ -327,15 +355,24 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phn-0L-Wow">
                                 <rect key="frame" x="117" y="28" width="141" height="141"/>
-                                <state key="normal" image="waves unselected"/>
+                                <state key="normal" image="waves_unselected"/>
+                                <connections>
+                                    <action selector="wavesBtnPressed:" destination="Rbh-vh-9zl" eventType="touchUpInside" id="Xhe-bk-Iw9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhX-Cn-Gye">
                                 <rect key="frame" x="117" y="506" width="141" height="141"/>
-                                <state key="normal" image="fire unselected"/>
+                                <state key="normal" image="fire_unselected"/>
+                                <connections>
+                                    <action selector="campfireBtnPressed:" destination="Rbh-vh-9zl" eventType="touchUpInside" id="DWs-lG-4TL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gai-mB-gNY">
                                 <rect key="frame" x="117" y="263" width="141" height="141"/>
-                                <state key="normal" image="fans unselected"/>
+                                <state key="normal" image="fans_unselected"/>
+                                <connections>
+                                    <action selector="fanBtnPressed:" destination="Rbh-vh-9zl" eventType="touchUpInside" id="7X4-rB-IeQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -352,6 +389,11 @@
                             <constraint firstItem="B9L-5A-rcx" firstAttribute="leading" secondItem="UsH-Mj-NqF" secondAttribute="leading" id="oFL-HK-dWF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="campfireBtn" destination="IhX-Cn-Gye" id="eio-Xu-ESY"/>
+                        <outlet property="fanBtn" destination="gai-mB-gNY" id="P7d-9z-gYg"/>
+                        <outlet property="wavesBtn" destination="Phn-0L-Wow" id="KWT-aa-YBs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nK1-wg-x85" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -360,20 +402,20 @@
     </scenes>
     <resources>
         <image name="RainBG1" width="1920" height="1080"/>
-        <image name="ecovirtual unselected" width="141" height="141"/>
-        <image name="fans unselected" width="141" height="141"/>
-        <image name="fire unselected" width="141" height="141"/>
-        <image name="light rain unselected" width="141" height="141"/>
+        <image name="ecovirtual_unselected" width="141" height="141"/>
+        <image name="fans_unselected" width="141" height="141"/>
+        <image name="fire_unselected" width="141" height="141"/>
+        <image name="light_rain_unselected" width="141" height="141"/>
         <image name="np_delete_926237_F2FEFF" width="300" height="300"/>
-        <image name="on roof unselected" width="141" height="141"/>
-        <image name="plantwave unselected" width="141" height="141"/>
+        <image name="on_roof_unselected" width="141" height="141"/>
+        <image name="plantwave_unselected" width="141" height="141"/>
         <image name="play" width="300" height="300"/>
         <image name="rainy" width="278" height="278"/>
-        <image name="thunderstorm unselected" width="141" height="141"/>
+        <image name="thunderstorm_unselected" width="141" height="141"/>
         <image name="timerClock" width="300" height="300"/>
         <image name="vaporwaveHead" width="278" height="278"/>
-        <image name="waves unselected" width="141" height="141"/>
+        <image name="waves_unselected" width="141" height="141"/>
         <image name="wavy" width="278" height="278"/>
-        <image name="死夢 unselected" width="141" height="141"/>
+        <image name="死夢_unselected" width="141" height="141"/>
     </resources>
 </document>

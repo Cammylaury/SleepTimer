@@ -20,15 +20,27 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
     @IBOutlet weak var lightRainBtn: UIButton!
     @IBOutlet weak var rainOnRoofBtn: UIButton!
     
+    var heavyThunderCenter: CGPoint!
+    var lightRainCenter: CGPoint!
+    var rainOnRoofCenter: CGPoint!
+    
 //the three different ambient noise options
     @IBOutlet weak var wavesBtn: UIButton!
     @IBOutlet weak var fanBtn: UIButton!
     @IBOutlet weak var campfireBtn: UIButton!
     
+    var wavesCenter: CGPoint!
+    var fanCenter: CGPoint!
+    var campfireCenter: CGPoint!
+    
 // the three different vaporwave options
     @IBOutlet weak var ecoVirtualBtn: UIButton!
     @IBOutlet weak var plantwaveBtn: UIButton!
     @IBOutlet weak var vanityBtn: UIButton!
+    
+    var ecoCenter: CGPoint!
+    var plantwaveCenter: CGPoint!
+    var vanityCenter: CGPoint!
     
     
     @IBOutlet weak var alarmButton: UIButton!
@@ -44,15 +56,29 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
         lightRainBtn.center = rainBtn.center
         rainOnRoofBtn.center = rainBtn.center
         
+        heavyThunderCenter = heavyThunderBtn.center
+        lightRainCenter = lightRainBtn.center
+        rainOnRoofCenter = rainOnRoofBtn.center
+        
+        
 //ambient center points
         wavesBtn.center = ambienceBtn.center
         fanBtn.center = ambienceBtn.center
         campfireBtn.center = ambienceBtn.center
         
+        wavesCenter = wavesBtn.center
+        fanCenter = fanBtn.center
+        campfireCenter = campfireBtn.center
+        
 //vaporwave center points
         ecoVirtualBtn.center = vaporwaveBtn.center
         plantwaveBtn.center = vaporwaveBtn.center
         vanityBtn.center = vaporwaveBtn.center
+        
+        ecoCenter = ecoVirtualBtn.center
+        plantwaveCenter = plantwaveBtn.center
+        vanityCenter = vanityBtn.center
+        
         
     }
     
@@ -71,8 +97,15 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
 // animating the rain button popout
     @IBAction func rainBtnPressed(_ sender: UIButton) {
         
-        print("button pressed")
+        UIView.animate(withDuration: 0.3, animations: {
+            self.heavyThunderBtn.center = self.heavyThunderCenter
+            self.lightRainBtn.center = self.lightRainCenter
+            self.rainOnRoofBtn.center = self.rainOnRoofCenter
+            
+        })// add animation here!
     }
+    
+
     
     
 //buttons for the ambience button popout

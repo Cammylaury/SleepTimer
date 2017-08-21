@@ -57,7 +57,7 @@
                                         <constraint firstItem="bMQ-7S-Ojx" firstAttribute="centerX" secondItem="18Y-tj-EDH" secondAttribute="centerX" id="kVC-fg-agZ"/>
                                     </constraints>
                                 </view>
-                                <blurEffect style="light"/>
+                                <blurEffect style="dark"/>
                             </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -75,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dng-YA-BRY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="-518.59070464767615"/>
+            <point key="canvasLocation" x="974" y="188"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -126,6 +126,9 @@
                                     <constraint firstAttribute="height" constant="70" id="Yaj-Lh-6KN"/>
                                 </constraints>
                                 <state key="normal" image="wavy"/>
+                                <connections>
+                                    <action selector="abienceBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ub-5e-rGv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woa-OB-3So" userLabel="vaporwaveBtn">
                                 <rect key="frame" x="289" y="468" width="70" height="70"/>
@@ -134,6 +137,9 @@
                                     <constraint firstAttribute="width" constant="70" id="m5v-eP-vTe"/>
                                 </constraints>
                                 <state key="normal" image="vaporwaveHead"/>
+                                <connections>
+                                    <action selector="vaporwaveBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tkV-Dd-i9c"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TD-0G-7kZ" userLabel="rainBtn">
                                 <rect key="frame" x="16" y="468" width="70" height="70"/>
@@ -142,6 +148,9 @@
                                     <constraint firstAttribute="width" constant="70" id="xnW-8f-ulr"/>
                                 </constraints>
                                 <state key="normal" image="rainy"/>
+                                <connections>
+                                    <action selector="rainBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mlQ-AN-cjh"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rain" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAW-St-IvC">
                                 <rect key="frame" x="23" y="439" width="56" height="21"/>
@@ -161,6 +170,127 @@
                                 <color key="textColor" red="0.95810967683792114" green="0.99746161699295044" blue="0.9986535906791687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <visualEffectView opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pRi-yk-f1Y">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="sf4-ze-eFO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iGe-ya-h9T">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="Oob-yc-Hqx">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzS-7V-dXZ" userLabel="thunderBtn">
+                                <rect key="frame" x="70" y="431" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="iSZ-iT-hol"/>
+                                    <constraint firstAttribute="height" constant="50" id="zZ0-P6-yHf"/>
+                                </constraints>
+                                <state key="normal" image="thunderstorm_unselected"/>
+                                <connections>
+                                    <action selector="thunderBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WQ6-zL-Tvf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szo-2r-2U9" userLabel="lightRainBtn">
+                                <rect key="frame" x="86" y="495" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7ui-TB-LNl"/>
+                                    <constraint firstAttribute="width" constant="50" id="WiP-fT-xsM"/>
+                                </constraints>
+                                <state key="normal" image="light_rain_unselected"/>
+                                <connections>
+                                    <action selector="lightRainBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xe8-CA-Kli"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOS-af-MdG" userLabel="onRoofBtn">
+                                <rect key="frame" x="45" y="546" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0nK-pC-Vis"/>
+                                    <constraint firstAttribute="width" constant="50" id="6nV-fi-7Pu"/>
+                                </constraints>
+                                <state key="normal" image="on_roof_unselected"/>
+                                <connections>
+                                    <action selector="onRoofBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dhe-V1-jid"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ovk-OI-psH" userLabel="wavesBtn">
+                                <rect key="frame" x="104" y="536" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ATB-Lh-vyi"/>
+                                    <constraint firstAttribute="width" constant="50" id="dfI-FN-9fe"/>
+                                </constraints>
+                                <state key="normal" image="waves_unselected"/>
+                                <connections>
+                                    <action selector="wavesBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HaD-sV-egX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkb-zY-Kwz" userLabel="fanBtn">
+                                <rect key="frame" x="162" y="565" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YCr-t9-R7B"/>
+                                    <constraint firstAttribute="width" constant="50" id="jKq-Sw-Sab"/>
+                                </constraints>
+                                <state key="normal" image="fans_unselected"/>
+                                <connections>
+                                    <action selector="fanBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GIK-J1-muh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHs-Ov-aY8" userLabel="fireBtn">
+                                <rect key="frame" x="220" y="536" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="C6Q-aT-3SU"/>
+                                    <constraint firstAttribute="height" constant="50" id="wwR-aa-jCf"/>
+                                </constraints>
+                                <state key="normal" image="fire_unselected"/>
+                                <connections>
+                                    <action selector="fireBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fcW-Kx-rfk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKh-XF-DDy" userLabel="ecoBtn">
+                                <rect key="frame" x="255" y="431" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="d02-ds-Iwf"/>
+                                    <constraint firstAttribute="width" constant="50" id="xzv-hq-JfT"/>
+                                </constraints>
+                                <state key="normal" image="ecovirtual_unselected"/>
+                                <connections>
+                                    <action selector="ecoBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VzU-5h-Ok7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Lo-qy-7lM" userLabel="plantBtn">
+                                <rect key="frame" x="237" y="495" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LRE-ZF-uQ7"/>
+                                    <constraint firstAttribute="width" constant="50" id="ZDx-oR-bG7"/>
+                                </constraints>
+                                <state key="normal" image="plantwave_unselected"/>
+                                <connections>
+                                    <action selector="plantWaveBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kwD-QS-Qc1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcd-cJ-6EL" userLabel="vanityBtn">
+                                <rect key="frame" x="278" y="546" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TJg-jL-dQi"/>
+                                    <constraint firstAttribute="width" constant="50" id="peR-LI-XpB"/>
+                                </constraints>
+                                <state key="normal" image="死夢_unselected"/>
+                                <connections>
+                                    <action selector="vanityBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tIk-r1-lFt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -198,206 +328,31 @@
                     </view>
                     <connections>
                         <outlet property="alarmButton" destination="Sxj-vS-W32" id="FKB-x8-H7W"/>
+                        <outlet property="ambienceBtn" destination="hfC-Oa-y0E" id="lKb-ga-Rpm"/>
+                        <outlet property="campfireBtn" destination="GHs-Ov-aY8" id="IB2-3P-jMh"/>
+                        <outlet property="ecoVirtualBtn" destination="RKh-XF-DDy" id="0ST-xT-iIb"/>
+                        <outlet property="fanBtn" destination="hkb-zY-Kwz" id="So1-jg-74L"/>
+                        <outlet property="heavyThunderBtn" destination="QzS-7V-dXZ" id="qfo-bH-1do"/>
+                        <outlet property="lightRainBtn" destination="szo-2r-2U9" id="CT9-S1-nEj"/>
+                        <outlet property="plantwaveBtn" destination="4Lo-qy-7lM" id="SPz-zp-uGV"/>
+                        <outlet property="rainBtn" destination="0TD-0G-7kZ" id="W1J-Ei-sft"/>
+                        <outlet property="rainOnRoofBtn" destination="dOS-af-MdG" id="Aw0-6t-NrS"/>
+                        <outlet property="vanityBtn" destination="vcd-cJ-6EL" id="YoL-w6-OpX"/>
+                        <outlet property="vaporwaveBtn" destination="woa-OB-3So" id="jy0-tu-yXj"/>
+                        <outlet property="wavesBtn" destination="Ovk-OI-psH" id="qG8-m4-vQ4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VcN-m6-SmL" userLabel="wavyBtn">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="YPd-SS-Pj9"/>
+                        <constraint firstAttribute="height" constant="70" id="rsP-6O-c3g"/>
+                    </constraints>
+                    <state key="normal" image="wavy"/>
+                </button>
             </objects>
-            <point key="canvasLocation" x="137" y="188"/>
-        </scene>
-        <!--vaporwaveOptions-->
-        <scene sceneID="3p0-6G-qIb">
-            <objects>
-                <viewController title="vaporwaveOptions" id="Lky-9X-xpE" customClass="VaporwaveSoundsViewController" customModule="Timer_" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="A0O-Hl-QXn"/>
-                        <viewControllerLayoutGuide type="bottom" id="MbX-cK-E0b"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QlC-3C-lam">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RainBG1" translatesAutoresizingMaskIntoConstraints="NO" id="Pf5-xv-Bbi">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kf1-cb-Qfk">
-                                <rect key="frame" x="117" y="28" width="141" height="141"/>
-                                <state key="normal" image="ecovirtual_unselected"/>
-                                <connections>
-                                    <action selector="ecoVirtualBtnPressed:" destination="Lky-9X-xpE" eventType="touchUpInside" id="Anz-El-8zp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5L-wJ-Cbi">
-                                <rect key="frame" x="117" y="506" width="141" height="141"/>
-                                <state key="normal" image="死夢_unselected"/>
-                                <connections>
-                                    <action selector="vanityBtnPressed:" destination="Lky-9X-xpE" eventType="touchUpInside" id="TM2-Pp-kbr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVm-Vb-V6Y">
-                                <rect key="frame" x="117" y="263" width="141" height="141"/>
-                                <state key="normal" image="plantwave_unselected"/>
-                                <connections>
-                                    <action selector="plantWaveBtnPressed:" destination="Lky-9X-xpE" eventType="touchUpInside" id="Sin-bO-pzH"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Kf1-cb-Qfk" firstAttribute="leading" secondItem="gVm-Vb-V6Y" secondAttribute="leading" id="8t4-XO-VJs"/>
-                            <constraint firstItem="MbX-cK-E0b" firstAttribute="top" secondItem="Pf5-xv-Bbi" secondAttribute="bottom" id="NUN-Rr-91k"/>
-                            <constraint firstItem="Pf5-xv-Bbi" firstAttribute="top" secondItem="QlC-3C-lam" secondAttribute="top" id="NgP-O3-uJ5"/>
-                            <constraint firstItem="Kf1-cb-Qfk" firstAttribute="top" secondItem="A0O-Hl-QXn" secondAttribute="bottom" constant="8" symbolic="YES" id="Yfj-od-XBY"/>
-                            <constraint firstItem="gVm-Vb-V6Y" firstAttribute="centerY" secondItem="Pf5-xv-Bbi" secondAttribute="centerY" id="gUd-2G-8Hd"/>
-                            <constraint firstItem="gVm-Vb-V6Y" firstAttribute="leading" secondItem="y5L-wJ-Cbi" secondAttribute="leading" id="hi4-FR-7TB"/>
-                            <constraint firstItem="Pf5-xv-Bbi" firstAttribute="leading" secondItem="QlC-3C-lam" secondAttribute="leading" id="kgS-1U-Ncp"/>
-                            <constraint firstAttribute="trailing" secondItem="Pf5-xv-Bbi" secondAttribute="trailing" id="oYF-Lg-AYX"/>
-                            <constraint firstAttribute="bottom" secondItem="y5L-wJ-Cbi" secondAttribute="bottom" constant="20" symbolic="YES" id="s03-Oc-eqy"/>
-                            <constraint firstItem="Kf1-cb-Qfk" firstAttribute="centerX" secondItem="Pf5-xv-Bbi" secondAttribute="centerX" id="tUL-S3-71X"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="ecoVirtualBtn" destination="Kf1-cb-Qfk" id="YCI-J1-YLH"/>
-                        <outlet property="plantWaveBtn" destination="gVm-Vb-V6Y" id="Ddh-DA-BkA"/>
-                        <outlet property="vanityBtn" destination="y5L-wJ-Cbi" id="3xF-kP-PDr"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3NH-vV-auW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="859" y="743"/>
-        </scene>
-        <!--rainOptions-->
-        <scene sceneID="Ryq-1d-XJa">
-            <objects>
-                <viewController title="rainOptions" id="pQE-Pi-JvS" customClass="RainSoundsViewController" customModule="Timer_" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2ez-m1-Efa"/>
-                        <viewControllerLayoutGuide type="bottom" id="3Ly-O6-VMw"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fnL-2f-Kmd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RainBG1" translatesAutoresizingMaskIntoConstraints="NO" id="Z13-fK-gyJ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11h-qx-bIH">
-                                <rect key="frame" x="117" y="28" width="141" height="141"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="141" id="VBx-Yj-mzh"/>
-                                    <constraint firstAttribute="height" constant="141" id="ixW-kw-eqt"/>
-                                </constraints>
-                                <state key="normal" image="thunderstorm_unselected"/>
-                                <connections>
-                                    <action selector="heavyThunderBtnPressed:" destination="pQE-Pi-JvS" eventType="touchUpInside" id="Z5l-dL-avo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttC-Jf-ccx">
-                                <rect key="frame" x="117" y="263" width="141" height="141"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="141" id="5u1-hE-xtv"/>
-                                    <constraint firstAttribute="height" constant="141" id="abu-F4-nZD"/>
-                                </constraints>
-                                <state key="normal" image="light_rain_unselected"/>
-                                <connections>
-                                    <action selector="lightRainBtnPressed:" destination="pQE-Pi-JvS" eventType="touchUpInside" id="U46-3U-2sG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgk-Lx-QgG">
-                                <rect key="frame" x="117" y="506" width="141" height="141"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="141" id="M4c-YZ-jqM"/>
-                                    <constraint firstAttribute="height" constant="141" id="w2H-hj-MtY"/>
-                                </constraints>
-                                <state key="normal" image="on_roof_unselected"/>
-                                <connections>
-                                    <action selector="rainOnRoofBtnPressed:" destination="pQE-Pi-JvS" eventType="touchUpInside" id="3Qx-Ag-CKC"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="11h-qx-bIH" firstAttribute="centerX" secondItem="fnL-2f-Kmd" secondAttribute="centerX" id="2oT-mM-2qV"/>
-                            <constraint firstItem="fgk-Lx-QgG" firstAttribute="centerX" secondItem="fnL-2f-Kmd" secondAttribute="centerX" id="ETd-U1-rRg"/>
-                            <constraint firstItem="Z13-fK-gyJ" firstAttribute="leading" secondItem="fnL-2f-Kmd" secondAttribute="leading" id="ZJi-h8-RZe"/>
-                            <constraint firstItem="Z13-fK-gyJ" firstAttribute="top" secondItem="fnL-2f-Kmd" secondAttribute="top" id="aDH-3i-jDJ"/>
-                            <constraint firstItem="ttC-Jf-ccx" firstAttribute="centerY" secondItem="fnL-2f-Kmd" secondAttribute="centerY" id="cD5-dn-yhl"/>
-                            <constraint firstItem="3Ly-O6-VMw" firstAttribute="top" secondItem="Z13-fK-gyJ" secondAttribute="bottom" id="g9Q-iv-W1J"/>
-                            <constraint firstItem="11h-qx-bIH" firstAttribute="top" secondItem="2ez-m1-Efa" secondAttribute="bottom" constant="8" symbolic="YES" id="nnF-Us-9QE"/>
-                            <constraint firstItem="ttC-Jf-ccx" firstAttribute="centerX" secondItem="fnL-2f-Kmd" secondAttribute="centerX" id="vpx-f8-Vfw"/>
-                            <constraint firstAttribute="trailing" secondItem="Z13-fK-gyJ" secondAttribute="trailing" id="xXD-H9-y3E"/>
-                            <constraint firstAttribute="bottom" secondItem="fgk-Lx-QgG" secondAttribute="bottom" constant="20" symbolic="YES" id="yUz-OW-6B7"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="heavyThunderBtn" destination="11h-qx-bIH" id="dCE-kk-Z6k"/>
-                        <outlet property="lightRainBtn" destination="ttC-Jf-ccx" id="G8I-rH-2el"/>
-                        <outlet property="rainOnRoofBtn" destination="fgk-Lx-QgG" id="H1y-Ph-YRA"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sLY-oE-wYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1049" y="-168"/>
-        </scene>
-        <!--ambienceOptions-->
-        <scene sceneID="9Z6-XG-BOQ">
-            <objects>
-                <viewController title="ambienceOptions" id="Rbh-vh-9zl" customClass="AmbientSoundsViewController" customModule="Timer_" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bsg-eJ-Drm"/>
-                        <viewControllerLayoutGuide type="bottom" id="WAK-hc-Knd"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="UsH-Mj-NqF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RainBG1" translatesAutoresizingMaskIntoConstraints="NO" id="B9L-5A-rcx">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phn-0L-Wow">
-                                <rect key="frame" x="117" y="28" width="141" height="141"/>
-                                <state key="normal" image="waves_unselected"/>
-                                <connections>
-                                    <action selector="wavesBtnPressed:" destination="Rbh-vh-9zl" eventType="touchUpInside" id="Xhe-bk-Iw9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhX-Cn-Gye">
-                                <rect key="frame" x="117" y="506" width="141" height="141"/>
-                                <state key="normal" image="fire_unselected"/>
-                                <connections>
-                                    <action selector="campfireBtnPressed:" destination="Rbh-vh-9zl" eventType="touchUpInside" id="DWs-lG-4TL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gai-mB-gNY">
-                                <rect key="frame" x="117" y="263" width="141" height="141"/>
-                                <state key="normal" image="fans_unselected"/>
-                                <connections>
-                                    <action selector="fanBtnPressed:" destination="Rbh-vh-9zl" eventType="touchUpInside" id="7X4-rB-IeQ"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="gai-mB-gNY" firstAttribute="leading" secondItem="IhX-Cn-Gye" secondAttribute="leading" id="0wH-2X-0Tx"/>
-                            <constraint firstItem="WAK-hc-Knd" firstAttribute="top" secondItem="B9L-5A-rcx" secondAttribute="bottom" id="5dN-Ol-Bos"/>
-                            <constraint firstAttribute="trailing" secondItem="B9L-5A-rcx" secondAttribute="trailing" id="7eY-OO-oJC"/>
-                            <constraint firstItem="Phn-0L-Wow" firstAttribute="centerX" secondItem="B9L-5A-rcx" secondAttribute="centerX" id="Fhh-lF-2Fy"/>
-                            <constraint firstAttribute="bottom" secondItem="IhX-Cn-Gye" secondAttribute="bottom" constant="20" symbolic="YES" id="Pqd-ry-eP8"/>
-                            <constraint firstItem="gai-mB-gNY" firstAttribute="centerY" secondItem="B9L-5A-rcx" secondAttribute="centerY" id="dAH-fv-L8R"/>
-                            <constraint firstItem="Phn-0L-Wow" firstAttribute="top" secondItem="bsg-eJ-Drm" secondAttribute="bottom" constant="8" symbolic="YES" id="dg3-Xj-e3T"/>
-                            <constraint firstItem="Phn-0L-Wow" firstAttribute="leading" secondItem="gai-mB-gNY" secondAttribute="leading" id="efo-8X-k3J"/>
-                            <constraint firstItem="B9L-5A-rcx" firstAttribute="top" secondItem="bsg-eJ-Drm" secondAttribute="bottom" constant="-20" id="jg3-x9-XcZ"/>
-                            <constraint firstItem="B9L-5A-rcx" firstAttribute="leading" secondItem="UsH-Mj-NqF" secondAttribute="leading" id="oFL-HK-dWF"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="campfireBtn" destination="IhX-Cn-Gye" id="eio-Xu-ESY"/>
-                        <outlet property="fanBtn" destination="gai-mB-gNY" id="P7d-9z-gYg"/>
-                        <outlet property="wavesBtn" destination="Phn-0L-Wow" id="KWT-aa-YBs"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nK1-wg-x85" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1704.8" y="382.75862068965517"/>
+            <point key="canvasLocation" x="136.80000000000001" y="187.55622188905548"/>
         </scene>
     </scenes>
     <resources>

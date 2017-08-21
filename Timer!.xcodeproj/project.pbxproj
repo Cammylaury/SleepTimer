@@ -18,9 +18,6 @@
 		26D51F121F49E6B3004D6340 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F111F49E6B3004D6340 /* BounceButton.swift */; };
 		26D51F141F4A7F08004D6340 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F131F4A7F08004D6340 /* TimerViewController.swift */; };
 		26D51F161F4A800E004D6340 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F151F4A800E004D6340 /* CircularTransition.swift */; };
-		26D51F181F4B215C004D6340 /* RainSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F171F4B215C004D6340 /* RainSoundsViewController.swift */; };
-		26D51F1A1F4B2182004D6340 /* AmbientSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F191F4B2182004D6340 /* AmbientSoundsViewController.swift */; };
-		26D51F1C1F4B2192004D6340 /* VaporwaveSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F1B1F4B2191004D6340 /* VaporwaveSoundsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,9 +34,6 @@
 		26D51F111F49E6B3004D6340 /* BounceButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
 		26D51F131F4A7F08004D6340 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		26D51F151F4A800E004D6340 /* CircularTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
-		26D51F171F4B215C004D6340 /* RainSoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainSoundsViewController.swift; sourceTree = "<group>"; };
-		26D51F191F4B2182004D6340 /* AmbientSoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmbientSoundsViewController.swift; sourceTree = "<group>"; };
-		26D51F1B1F4B2191004D6340 /* VaporwaveSoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VaporwaveSoundsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +83,7 @@
 		26D51F051F48C8C7004D6340 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				26D51F171F4B215C004D6340 /* RainSoundsViewController.swift */,
 				26D51F131F4A7F08004D6340 /* TimerViewController.swift */,
-				26D51F191F4B2182004D6340 /* AmbientSoundsViewController.swift */,
-				26D51F1B1F4B2191004D6340 /* VaporwaveSoundsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -199,12 +190,9 @@
 				26D51F091F48C935004D6340 /* RoundBtnView.swift in Sources */,
 				26D51F0D1F49DF73004D6340 /* WakeUpBtnView.swift in Sources */,
 				26D51EF01F48A39F004D6340 /* ViewController.swift in Sources */,
-				26D51F1A1F4B2182004D6340 /* AmbientSoundsViewController.swift in Sources */,
-				26D51F1C1F4B2192004D6340 /* VaporwaveSoundsViewController.swift in Sources */,
 				26D51F161F4A800E004D6340 /* CircularTransition.swift in Sources */,
 				26D51F141F4A7F08004D6340 /* TimerViewController.swift in Sources */,
 				26D51F0B1F48CEBE004D6340 /* RoundBtnTimerBtn.swift in Sources */,
-				26D51F181F4B215C004D6340 /* RainSoundsViewController.swift in Sources */,
 				26D51EEE1F48A39F004D6340 /* AppDelegate.swift in Sources */,
 				26D51F121F49E6B3004D6340 /* BounceButton.swift in Sources */,
 			);

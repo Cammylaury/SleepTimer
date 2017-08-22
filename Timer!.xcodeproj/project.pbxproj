@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		26D51EEE1F48A39F004D6340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51EED1F48A39F004D6340 /* AppDelegate.swift */; };
 		26D51EF01F48A39F004D6340 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51EEF1F48A39F004D6340 /* ViewController.swift */; };
-		26D51EF31F48A39F004D6340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D51EF11F48A39F004D6340 /* Main.storyboard */; };
 		26D51EF51F48A39F004D6340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26D51EF41F48A39F004D6340 /* Assets.xcassets */; };
 		26D51EF81F48A39F004D6340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D51EF61F48A39F004D6340 /* LaunchScreen.storyboard */; };
 		26D51F091F48C935004D6340 /* RoundBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F081F48C935004D6340 /* RoundBtnView.swift */; };
@@ -18,13 +17,16 @@
 		26D51F121F49E6B3004D6340 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F111F49E6B3004D6340 /* BounceButton.swift */; };
 		26D51F141F4A7F08004D6340 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F131F4A7F08004D6340 /* TimerViewController.swift */; };
 		26D51F161F4A800E004D6340 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F151F4A800E004D6340 /* CircularTransition.swift */; };
+		26D51F201F4C877C004D6340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D51F1F1F4C877C004D6340 /* Main.storyboard */; };
+		26D51F251F4C8ADF004D6340 /* RainSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F211F4C8ADF004D6340 /* RainSoundsViewController.swift */; };
+		26D51F261F4C8ADF004D6340 /* VaporwaveSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F221F4C8ADF004D6340 /* VaporwaveSoundsViewController.swift */; };
+		26D51F271F4C8ADF004D6340 /* AmbientSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51F231F4C8ADF004D6340 /* AmbientSoundsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26D51EEA1F48A39F004D6340 /* Timer!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Timer!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D51EED1F48A39F004D6340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26D51EEF1F48A39F004D6340 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		26D51EF21F48A39F004D6340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26D51EF41F48A39F004D6340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26D51EF71F48A39F004D6340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26D51EF91F48A39F004D6340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +36,10 @@
 		26D51F111F49E6B3004D6340 /* BounceButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
 		26D51F131F4A7F08004D6340 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		26D51F151F4A800E004D6340 /* CircularTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
+		26D51F1F1F4C877C004D6340 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		26D51F211F4C8ADF004D6340 /* RainSoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainSoundsViewController.swift; sourceTree = "<group>"; };
+		26D51F221F4C8ADF004D6340 /* VaporwaveSoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VaporwaveSoundsViewController.swift; sourceTree = "<group>"; };
+		26D51F231F4C8ADF004D6340 /* AmbientSoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmbientSoundsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +78,7 @@
 				26D51F051F48C8C7004D6340 /* Controller */,
 				26D51EED1F48A39F004D6340 /* AppDelegate.swift */,
 				26D51EEF1F48A39F004D6340 /* ViewController.swift */,
-				26D51EF11F48A39F004D6340 /* Main.storyboard */,
+				26D51F1F1F4C877C004D6340 /* Main.storyboard */,
 				26D51EF41F48A39F004D6340 /* Assets.xcassets */,
 				26D51EF61F48A39F004D6340 /* LaunchScreen.storyboard */,
 				26D51EF91F48A39F004D6340 /* Info.plist */,
@@ -84,6 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				26D51F131F4A7F08004D6340 /* TimerViewController.swift */,
+				26D51F211F4C8ADF004D6340 /* RainSoundsViewController.swift */,
+				26D51F221F4C8ADF004D6340 /* VaporwaveSoundsViewController.swift */,
+				26D51F231F4C8ADF004D6340 /* AmbientSoundsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -174,9 +183,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D51F201F4C877C004D6340 /* Main.storyboard in Resources */,
 				26D51EF81F48A39F004D6340 /* LaunchScreen.storyboard in Resources */,
 				26D51EF51F48A39F004D6340 /* Assets.xcassets in Resources */,
-				26D51EF31F48A39F004D6340 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,10 +199,13 @@
 				26D51F091F48C935004D6340 /* RoundBtnView.swift in Sources */,
 				26D51F0D1F49DF73004D6340 /* WakeUpBtnView.swift in Sources */,
 				26D51EF01F48A39F004D6340 /* ViewController.swift in Sources */,
+				26D51F271F4C8ADF004D6340 /* AmbientSoundsViewController.swift in Sources */,
 				26D51F161F4A800E004D6340 /* CircularTransition.swift in Sources */,
 				26D51F141F4A7F08004D6340 /* TimerViewController.swift in Sources */,
 				26D51F0B1F48CEBE004D6340 /* RoundBtnTimerBtn.swift in Sources */,
+				26D51F251F4C8ADF004D6340 /* RainSoundsViewController.swift in Sources */,
 				26D51EEE1F48A39F004D6340 /* AppDelegate.swift in Sources */,
+				26D51F261F4C8ADF004D6340 /* VaporwaveSoundsViewController.swift in Sources */,
 				26D51F121F49E6B3004D6340 /* BounceButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,14 +213,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		26D51EF11F48A39F004D6340 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				26D51EF21F48A39F004D6340 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		26D51EF61F48A39F004D6340 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

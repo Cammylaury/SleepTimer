@@ -9,6 +9,12 @@
 import UIKit
 
 class TimerViewController: UIViewController {
+    
+    @IBOutlet weak var timerLabel: UILabel!
+    
+    var seconds = 60
+    var timer = Timer()
+    var isTimerRunning = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +25,10 @@ class TimerViewController: UIViewController {
         
         self.dismiss(animated: true, completion: nil)
         
+    }
+    
+    @IBAction func resetTapped(_ sender: Any) {
+        timerLabel.text = "00:00:00"
     }
 
 }

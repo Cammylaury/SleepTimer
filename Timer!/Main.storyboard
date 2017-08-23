@@ -49,12 +49,52 @@
                                                 <constraint firstAttribute="height" constant="60" id="v1u-AF-ku6"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SA1-VT-hDc">
+                                            <rect key="frame" x="8" y="255" width="359" height="113"/>
+                                            <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="60"/>
+                                            <color key="textColor" red="0.87242048978805542" green="0.9158443808555603" blue="0.93086832761764526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcO-5x-KBk" customClass="BounceButton" customModule="Timer_" customModuleProvider="target">
+                                            <rect key="frame" x="81" y="451" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="AOm-qK-j6w"/>
+                                                <constraint firstAttribute="height" constant="80" id="v1r-tI-BbD"/>
+                                            </constraints>
+                                            <state key="normal" image="play"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHN-0E-ccH" customClass="BounceButton" customModule="Timer_" customModuleProvider="target">
+                                            <rect key="frame" x="214" y="451" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="1ar-RR-lgR"/>
+                                                <constraint firstAttribute="width" constant="80" id="Ifg-nM-qse"/>
+                                            </constraints>
+                                            <state key="normal" image="pause"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYG-oe-9D6">
+                                            <rect key="frame" x="161" y="587" width="53" height="58"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="58" id="VXy-zd-sgA"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                            <state key="normal" title="Reset">
+                                                <color key="titleColor" red="0.64084311548223349" green="0.17784910299360895" blue="0.17480240285226856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                        </button>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="WcO-5x-KBk" firstAttribute="leading" secondItem="vBw-Vy-nQW" secondAttribute="leading" constant="81" id="61j-bJ-Yvy"/>
                                         <constraint firstItem="bMQ-7S-Ojx" firstAttribute="top" secondItem="vBw-Vy-nQW" secondAttribute="top" constant="128" id="6a0-IH-Chn"/>
+                                        <constraint firstItem="IYG-oe-9D6" firstAttribute="centerX" secondItem="vBw-Vy-nQW" secondAttribute="centerX" id="9lS-cf-O2Q"/>
+                                        <constraint firstAttribute="bottom" secondItem="IYG-oe-9D6" secondAttribute="bottom" constant="22" id="BDu-UM-ScR"/>
+                                        <constraint firstItem="CHN-0E-ccH" firstAttribute="top" secondItem="WcO-5x-KBk" secondAttribute="top" id="Dxk-lr-sPA"/>
                                         <constraint firstItem="bMQ-7S-Ojx" firstAttribute="centerY" secondItem="18Y-tj-EDH" secondAttribute="centerY" id="EUT-C1-Fa9"/>
                                         <constraint firstItem="18Y-tj-EDH" firstAttribute="centerX" secondItem="vBw-Vy-nQW" secondAttribute="centerX" id="JKJ-xC-Tph"/>
+                                        <constraint firstItem="WcO-5x-KBk" firstAttribute="top" secondItem="SA1-VT-hDc" secondAttribute="bottom" constant="83" id="Qif-92-66y"/>
+                                        <constraint firstAttribute="bottom" secondItem="WcO-5x-KBk" secondAttribute="bottom" constant="136" id="R7q-ac-0Yf"/>
+                                        <constraint firstAttribute="trailing" secondItem="CHN-0E-ccH" secondAttribute="trailing" constant="81" id="gKj-G3-src"/>
                                         <constraint firstItem="bMQ-7S-Ojx" firstAttribute="centerX" secondItem="18Y-tj-EDH" secondAttribute="centerX" id="kVC-fg-agZ"/>
+                                        <constraint firstItem="IYG-oe-9D6" firstAttribute="centerX" secondItem="SA1-VT-hDc" secondAttribute="centerX" id="rZg-12-Dgb"/>
                                     </constraints>
                                 </view>
                                 <blurEffect style="dark"/>
@@ -75,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dng-YA-BRY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="-501"/>
+            <point key="canvasLocation" x="136.80000000000001" y="-501.49925037481262"/>
         </scene>
         <!--Rain Sounds View Controller-->
         <scene sceneID="s1D-oE-X4d">
@@ -217,13 +257,15 @@
                                     <constraint firstAttribute="width" constant="60" id="SJZ-l5-Qio"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59k-bg-F5q" userLabel="playBtn">
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59k-bg-F5q" userLabel="playBtn" customClass="BounceButton" customModule="Timer_" customModuleProvider="target">
                                 <rect key="frame" x="145" y="291" width="85" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="85" id="edj-nS-n9T"/>
                                     <constraint firstAttribute="height" constant="85" id="wuW-nt-LRz"/>
                                 </constraints>
-                                <state key="normal" image="play"/>
+                                <state key="normal" image="play">
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfC-Oa-y0E" userLabel="wavyBtn" customClass="BounceButton" customModule="Timer_" customModuleProvider="target">
                                 <rect key="frame" x="153" y="468" width="70" height="70"/>
@@ -293,9 +335,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TVt-7R-FVm">
-                                <rect key="frame" x="59" y="384" width="258" height="31"/>
+                                <rect key="frame" x="21" y="384" width="340" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="254" id="HbT-v8-efP"/>
+                                    <constraint firstAttribute="width" constant="336" id="HbT-v8-efP"/>
                                 </constraints>
                             </slider>
                         </subviews>
@@ -326,7 +368,7 @@
                             <constraint firstItem="rAW-St-IvC" firstAttribute="baseline" secondItem="3Fl-lF-dc3" secondAttribute="baseline" id="hHI-5b-jYf"/>
                             <constraint firstItem="2bo-i8-sZz" firstAttribute="centerY" secondItem="59k-bg-F5q" secondAttribute="centerY" id="jOn-yO-n3C"/>
                             <constraint firstItem="59k-bg-F5q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kl8-C0-s1i"/>
-                            <constraint firstItem="TVt-7R-FVm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qFt-op-zmw"/>
+                            <constraint firstItem="TVt-7R-FVm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="3.5" id="qFt-op-zmw"/>
                             <constraint firstItem="rAW-St-IvC" firstAttribute="top" secondItem="0TD-0G-7kZ" secondAttribute="bottom" constant="-99" id="rDg-kT-dwC"/>
                             <constraint firstItem="9DO-e4-280" firstAttribute="centerX" secondItem="woa-OB-3So" secondAttribute="centerX" id="vJf-sc-pPA"/>
                             <constraint firstItem="hKh-OC-ihc" firstAttribute="bottom" secondItem="Sxj-vS-W32" secondAttribute="bottom" constant="-18" id="vRi-iX-t4L"/>
@@ -575,6 +617,7 @@
         <image name="light_rain_unselected" width="141" height="141"/>
         <image name="np_delete_926237_F2FEFF" width="300" height="300"/>
         <image name="on_roof_unselected" width="141" height="141"/>
+        <image name="pause" width="300" height="300"/>
         <image name="plantwave_unselected" width="141" height="141"/>
         <image name="play" width="300" height="300"/>
         <image name="rainy" width="278" height="278"/>
